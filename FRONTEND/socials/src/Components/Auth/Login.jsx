@@ -81,13 +81,13 @@ function LoginForm() {
                 onClose={onClose}
             >
                 <ModalOverlay />
-                <ModalContent  >
+                <ModalContent bgGradient="linear(to-bl, #190B25, #fff)" >
                     <ModalHeader>Login to your account</ModalHeader>
                     <ModalCloseButton />
                     <ModalBody pb={6}>
                         <FormControl mt={4}>
                             <FormLabel>*email</FormLabel>
-                            <Input ref={initialRef} sx={{backgroundColor : "red"}} placeholder='Enter your email' type="email" name="email"
+                            <Input variant="outline" placeholder='Enter your email' type="email" name="email"
                                 onChange={handleChange} />
                         </FormControl>
 

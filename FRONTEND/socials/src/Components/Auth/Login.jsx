@@ -71,7 +71,7 @@ function LoginForm() {
 
     return (
         <>
-            
+
             <Button onClick={onOpen}>Login</Button>
 
             <Modal
@@ -81,8 +81,8 @@ function LoginForm() {
                 onClose={onClose}
             >
                 <ModalOverlay />
-                <ModalContent bgGradient="linear(to-bl, #190B25, #fff)" >
-                    <ModalHeader>Login to your account</ModalHeader>
+                <ModalContent bgGradient="linear(to-bl, #110236, #fff)" >
+                    <ModalHeader ml={100}  >Login to your account</ModalHeader>
                     <ModalCloseButton />
                     <ModalBody pb={6}>
                         <FormControl mt={4}>
@@ -93,7 +93,7 @@ function LoginForm() {
 
                         <FormControl mt={4}>
                             <FormLabel>*password</FormLabel>
-                            <Input sx={{backgroundColor : "none"}} placeholder='enter password' type="password" name="password"
+                            <Input sx={{ backgroundColor: "none" }} placeholder='enter password' type="password" name="password"
                                 onChange={handleChange} />
                         </FormControl>
                     </ModalBody>

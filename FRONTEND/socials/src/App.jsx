@@ -1,14 +1,16 @@
 import * as React from 'react'
 import "./App.css"
-import { ChakraProvider } from '@chakra-ui/react'
-import LoginForm from './Components/Auth/Login';
+import Navbar from './Routes/Navbar';
+import AllRoutes from "./Routes/AllRoutes"
 
 function App() {
   // 2. Wrap ChakraProvider at the root of your app
   return (
-    <ChakraProvider>
-      <LoginForm />
-    </ChakraProvider>
+    <>
+      
+      <Navbar/>
+      <AllRoutes />
+    </>
   )
 }
 

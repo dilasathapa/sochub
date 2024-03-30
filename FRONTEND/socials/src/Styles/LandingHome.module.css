@@ -1,0 +1,98 @@
+.parent_container{
+    margin: 2% 15%;
+    border: 2px solid green;
+}
+
+
+
+.section1{
+    display: flex;
+    position: relative;
+}
+
+.section1>img{
+    width: 65%;
+    border: 2px solid red;
+    /* position: absolute; */
+
+}
+.heading h1:nth-child(1){
+    border: 2px solid red;
+    position: absolute;
+    left: 55%;
+    top: 2%;
+    font-size: 80px;
+    font-weight: 600;
+
+}
+.heading h1:nth-child(2){
+    border: 2px solid red;
+    position: absolute;
+    left: 60%;
+    top: 19%;
+    font-size: 80px;
+    font-weight: 600;
+}
+.heading h1:nth-child(3){
+    border: 2px solid red;
+    position: absolute;
+    left: 65%;
+    top: 40%;
+    font-size: 80px;
+    font-weight: 600;
+}
+
+.section1>div>p{
+    position: absolute;
+    top: 70%;
+    left: 55%;
+    width: 40%;
+}
+
+.section1>div>button{
+    position: absolute;
+    top: 85%;
+    border: 2px solid blue;
+    padding: 10px 15px;
+    width: 20%;
+    border-radius: 50px;
+    font-weight: 600;
+    /* background-color: rgb(29, 98, 29); */
+}
+
+/* middle container */
+
+.middle_container{
+    /* position: absolute; */
+    display: flex;
+    border: 2px solid rgb(185, 23, 109);
+    position: relative;
+    background-color: red;
+    height: 20px;
+}
+
+.middle_container>p{
+    width: 45%;
+    top: 200px;
+    background-color: yellow;
+    position: absolute;
+}
+.middle_container>img{
+    width: 40%;
+    position: absolute;
+    left: 54%;
+    top: 60px;
+    
+}
+
+/* third container */
+
+.third_container{
+    position: relative;
+    border: 2px solid orange;
+}
+
+
+.third_container>img{
+    position: absolute;
+}

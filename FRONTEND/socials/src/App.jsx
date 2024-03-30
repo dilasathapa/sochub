@@ -2,14 +2,14 @@ import * as React from 'react'
 import "./App.css"
 import Navbar from './Routes/Navbar';
 import AllRoutes from "./Routes/AllRoutes"
+import Landingpage from './Components/Landingpage';
 
 function App() {
-  // 2. Wrap ChakraProvider at the root of your app
   return (
     <>
-      
-      <Navbar/>
       <AllRoutes />
+      <Landingpage />
+      {/* <button>hello</button> */}
     </>
   )
 }

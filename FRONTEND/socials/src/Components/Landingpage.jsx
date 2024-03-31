@@ -23,6 +23,8 @@ const Landingpage = () => {
                         <button>Let's Explore</button>
                     </div>
                 </section>
+
+                
                 <section className={styles.middle_container}>
                     <p> With seamless integration with the GitHub API, our project provides
                         a user-friendly interface to search

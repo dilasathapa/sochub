@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <AllRoutes />
-      <Landingpage />
+      {/* <Landingpage /> */}
       {/* <button>hello</button> */}
     </>
   )

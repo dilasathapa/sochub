@@ -1,0 +1,33 @@
+.footer_parent{
+    /* border: 2px solid blue; */
+    height: 220px;
+    display: flex;
+    /* border: 2px solid red; */
+    background-color: #000;
+
+}
+
+
+
+.footerlinks{
+    display: flex;
+    /* border: 2px solid purple; */
+    width: 70%;
+    justify-content: end;
+    align-items: end;
+    padding-bottom: 2%;
+    gap: 5%;
+    list-style: none;
+    font-weight: 500;
+    color: #fff;
+}
+
+.footer_parent>div:nth-child(2){
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding-bottom: 2%;
+    align-items: flex-end;
+    justify-items: right;
+}

@@ -24,6 +24,8 @@ const Register = () => {
                                 <label htmlFor="user_password">password</label>
                                 <input type="password" id="user_password" placeholder="enter your password" />
 
+
+
                                 <button className={styles.register_button}>Register</button>
                             </form>
                             <hr />

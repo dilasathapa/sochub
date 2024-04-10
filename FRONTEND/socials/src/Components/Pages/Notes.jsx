@@ -1,9 +1,13 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import styles from './../../Styles/DragmeNotes.module.css';
 
 
 function DragmeNotes() {
 
+  //
+  const [show, setShow] = useState(false)
+  let [notesInputs, setNotesInputs] = useState([])
+  //
   const containerRef = useRef(null);
   const boxRef = useRef(null);
 
@@ -59,11 +63,60 @@ function DragmeNotes() {
     return cleanup;
   }, [])
 
+  function changeVisibility() {
+    setShow(!show)
+    console.log(show)
+  }
+
+  var changeStyle;
+
+  if (show) {
+    changeStyle = {
+      display: "block"
+    }
+  } else {
+    changeStyle = {
+      display: "none"
+    }
+  }
+
+  function submitInputs(e) {
+    e.preventDefault()
+    console.log(e)
+    console.log(e.target.value)
+    setNotesInputs([...notesInputs, e.target[0].value])
+    
+  }
+
+  function deleteNotes(i){
+    console.log("ee", i)
+    notesInputs.splice(i, 1)
+    console.log(notesInputs)
+    setNotesInputs([...notesInputs])
+
+  }
+
+  console.log(notesInputs)
   return (
     <main>
       <div ref={containerRef} className={styles.container}>
         <div ref={boxRef} className={styles.box}>
-            <input type="text" placeholder='hello' />
+          <div className={styles.topdiv}><button onClick={changeVisibility}>+</button></div>
+          <form onSubmit={submitInputs} >
+
+            <input style={changeStyle} type="text" placeholder='hello'
+            />
+          </form>
+          {
+            notesInputs.map((e, i)=>(
+              <div className={styles.displayNotes} key={i}>
+                <p>{e}</p>
+                <button onClick={()=>{deleteNotes(i)}}>-</button>
+                <hr />
+              </div>
+            ))
+          }
+
         </div>
       </div>
     </main>

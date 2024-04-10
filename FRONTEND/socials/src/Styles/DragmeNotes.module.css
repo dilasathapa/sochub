@@ -19,7 +19,31 @@ main {
     left: 0;
     background-color: yellow;
     opacity: 0.5;
-    height: 200px;
-    width: 300px;
-    cursor: pointer;
+    height: 300px;
+    width: 250px;
+    cursor: grab;
+    border: 2px solid #000;
+    border-radius: 4px;
+
+}
+
+.box>form>input{
+    width: 98%;
+    margin: 1%;
+}
+
+.topdiv{
+    height: 30px;
+    background-color: rgb(134, 134, 15);
+    
+}
+
+.displayNotes{
+    display: flex;
+    padding: 0 2%;
+    justify-content: space-between;
+}
+
+.displayNotes>p{
+    width: 90%;
 }

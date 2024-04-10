@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import LoginForm from "../Components/Auth/Login";
 import styles from "./../Styles/Landing-nav.module.css"
 
-const Navbar = () => {
+const HomeNavbar = () => {
     return (
         <>
             <div className={styles.landing_nav_parent}>
@@ -20,4 +20,4 @@ const Navbar = () => {
     )
 }
 
-export default Navbar
+export default HomeNavbar

@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "../Routes/Navbar";
+import HomeNavbar from "../Routes/HomeNavbar";
 import firstsectionsvg from "./../assets/illustrations/wfh_1.svg"
 import styles from "./../Styles/LandingHome.module.css"
 import secondcolored from "./../assets/illustrations/second_colored.svg"
@@ -9,7 +9,7 @@ import Footer from "./Footer";
 const Landingpage = () => {
     return (
         <>
-            <Navbar />
+            <HomeNavbar />
             <div className={styles.parent_container}>
                 <section className={styles.section1}>
                     <img src={firstsectionsvg} alt="svg1" />

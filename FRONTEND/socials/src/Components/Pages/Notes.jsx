@@ -112,7 +112,6 @@ function DragmeNotes() {
               <div className={styles.displayNotes} key={i}>
                 <p>{e}</p>
                 <button onClick={()=>{deleteNotes(i)}}>-</button>
-                <hr />
               </div>
             ))
           }

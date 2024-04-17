@@ -1,18 +1,18 @@
-.container_parent{
+.container_parent {
     background-color: #1e1e1e;
     color: #fff;
     height: 100vh;
 }
 
-.container{
+.container {
     display: flex;
     justify-content: space-between;
     padding-top: 2%;
     margin: 0% 15%;
-    border: 2px solid green;
+    /* border: 2px solid green; */
 }
 
-.section1{
+.section1 {
     width: 20%;
     /* background-color: red; */
     /* height: 100px; */
@@ -25,64 +25,99 @@
     left : 20px;
 } */
 
-.dp{
+.dp {
     position: absolute;
     background-color: aqua;
     width: 80%;
-    height: 55%;
+    height: 50%;
     margin: 0 10%;
-    border: 2px solid teal;
-    top: -40px;
+    /* border: 2px solid teal; */
+    top: -30px;
     /* left : 20px; */
     border-radius: 8px 8px 0 0;
 }
 
-.dp>img{
+.dp>img {
     border-radius: 8px 8px 0 0;
     height: 100%;
     width: 100%;
 }
 
-.section1>div:nth-child(1){
+.section1>div:nth-child(1) {
     position: relative;
-    border: 2px solid green;
+    /* border: 2px solid green; */
     height: 300px;
-    margin-top: 15%;
+    margin-top: 10%;
     border-radius: 0 0 4px 4px;
     background-color: #2c3432;
 }
 
-.section2{
+.section2 {
     width: 60%;
-    background-color: red;
+    /* background-color: red; */
     /* height: 100px; */
 }
 
-.section3{
+.section3 {
     width: 18%;
     background-color: red;
     /* height: 100px; */
 }
 
-.section1>div>div:nth-child(2){
+.section1>div>div:nth-child(2) {
     border: 2px solid yellow;
     margin-top: 60%;
 }
 
-.dailynotes{
-    border: 2px solid blue;
+.dailynotes {
+    /* border: 2px solid blue; */
     height: 100px;
     display: flex;
-    padding: 4% 8%;
+    padding: 4% 2%;
     justify-content: space-between;
+    border-radius: 4px;
+    /* background-color: #2c3432; */
+
+    /* background-color: rgb(232, 230, 227); */
+    background-color: #2c3e50;
+    
 }
 
-.dailynotes>img{
+.dailynotes>img {
     height: 50px;
     border-radius: 50%;
 }
-.dailynotes>textarea{
-    width: 80%;
+
+.dailynotes>textarea {
+    width: 85%;
     border-radius: 20px;
+    resize: none;
+    background-color: #2c3432;
+    padding-left: 20px;
+    padding-top: 10px;
+    overflow-y: hidden;
+    border: 2px solid #4c4c4b;
+    /* position: relative; */
 }
 
+.notestextarea{
+    position: relative;
+}
+
+.addBtn {
+    /* border: 2px solid green; */
+    font-size: 30px;
+    margin-top: 8px;
+    color: #4c4c4b;
+    color: aliceblue;
+    cursor: pointer;
+}
+.addBtn:hover{
+    border-radius: 6px;
+    box-shadow: 0 0 4px #fff;
+}
+
+.smiles {
+    position: absolute;
+    right: 50px;
+}

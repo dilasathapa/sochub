@@ -24,6 +24,7 @@
     gap: 38px;
     position: sticky;
     top: 1px;
+    z-index: 99;
     
 }
 .seconddiv>h3{

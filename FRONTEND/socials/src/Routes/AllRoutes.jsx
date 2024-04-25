@@ -4,6 +4,7 @@ import Register from "../Components/Auth/Register";
 import Landingpage from "../Components/Landingpage";
 import LoginForm from "../Components/Auth/Login";
 import Home from "../Components/Home";
+import GSearch from "../Components/Pages/GSearch";
 
 const AllRoutes=()=>{
     return (
@@ -13,6 +14,7 @@ const AllRoutes=()=>{
             <Route path="/registration" element={<Register />} ></Route>
             <Route path="/login" element={<LoginForm />}></Route>
             <Route path="/feed" element={<Home />}></Route>
+            <Route path="/githubsearch/users" element={<GSearch />}></Route>
         </Routes>
         </>
     )

@@ -1,0 +1,14 @@
+.parent_container{
+    border: 2px solid green;
+    margin: 0 15%;
+}
+
+.advertise_container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.advertise_container>div{
+    border: 2px solid red;
+    
+}

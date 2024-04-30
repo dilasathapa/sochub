@@ -17,7 +17,7 @@ const Register = () => {
     function submitData(user_data){
         console.log(user_data)
         let payload = JSON.stringify(user_data)
-        fetch("http://localhost:8080/user/register",{
+        fetch("http://localhost:8081/user/register",{
             headers : {
                 "Content-Type" : "application/json"
             },

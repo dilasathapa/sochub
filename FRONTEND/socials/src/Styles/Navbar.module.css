@@ -23,7 +23,7 @@
     text-align: center;
     gap: 38px;
     position: sticky;
-    top: 0.001px;
+    top: 1px;
     z-index: 99;
     
 }

@@ -1,7 +1,7 @@
 import React from "react";
 import { BsGithub } from "react-icons/bs";
 
-import styles from "../../Styles/SearchedUserProfile.module.css"
+import styles from "../../Styles/SearchedUserprofile.module.css"
 
 const SearchedUserProfile = () => {
     return (
@@ -33,4 +33,3 @@ const SearchedUserProfile = () => {
 }
 
 export default SearchedUserProfile;
-

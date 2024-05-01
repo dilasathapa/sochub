@@ -1,0 +1,42 @@
+.search_field {
+    height: 50px;
+    width: 55%;
+    margin: 6% 20% 4% 23%;
+    padding: 5px 5px 5px 15px;
+    border-radius: 20px;
+    /* border: 2px solid yellow; */
+}
+
+.moved {
+    background-color: red;
+    position: fixed;
+    top: 30px;
+    left: -7%;
+    height: 2px;
+    width: 20%;
+    height: 40px;
+    z-index: 99;
+}
+
+.search_parent_container {
+    position: relative;
+    height: 200vh;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    border: 2px solid green;
+
+}
+
+.user_details{
+    border: 2px solid blue;
+}
+
+.users_field{
+    border: 2px solid yellow;
+    margin-top: 80px;
+    margin: 0 15%;
+    display: flex;
+    justify-content: space-between;
+    gap: 2%;
+}

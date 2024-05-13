@@ -4,7 +4,7 @@
     margin: 6% 20% 4% 23%;
     padding: 5px 5px 5px 15px;
     border-radius: 20px;
-    /* border: 2px solid yellow; */
+    border: 2px solid yellow;
 }
 
 .moved {
@@ -20,23 +20,22 @@
 
 .search_parent_container {
     position: relative;
-    height: 200vh;
+    /* height: 100vh; */
     /* display: flex;
     justify-content: center;
     align-items: center; */
-    border: 2px solid green;
+    /* border: 2px solid green; */
 
 }
 
-.user_details{
-    border: 2px solid blue;
-}
 
 .users_field{
-    border: 2px solid yellow;
-    margin-top: 80px;
-    margin: 0 15%;
-    display: flex;
-    justify-content: space-between;
+    /* border: 2px solid yellow; */
+    /* margin-top: 580px; */
+    margin: 5% 15%;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 2%;
+    
 }

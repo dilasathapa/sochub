@@ -50,7 +50,6 @@ const GSearch = () => {
 
     return (
         <>
-            <Navbar />
             <div className={styled_GS.search_parent_container}>
                 <div >
 

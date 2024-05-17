@@ -1,0 +1,41 @@
+.parent_container{
+    border: 2px solid green;
+    margin: 2% 10%;
+    /* height: 200px; */
+    display: flex;
+    justify-content: space-between;
+    gap: 1%;
+}
+
+.parent_container>div:nth-child(1){
+    width: 20%;
+    border: 2px solid aqua ;
+
+}
+.parent_container>div:nth-child(2){
+    width: 55%;
+    border: 2px solid yellow;
+    /* margin-top: -2%; */
+}
+.parent_container>div:nth-child(3){
+    width: 30%;
+    border: 2px solid red;
+}
+
+.addpost_container{
+    border: 2px solid teal;
+
+}
+.addpost_container>div{
+    /* height: 50px; */
+    border: 2px solid red;
+    margin: 2%;
+
+}
+.adddescription_container{
+    width: 100%;
+    resize: none;
+    height: 30px;
+    padding-left: 10px;
+    padding-top: 10px;
+}

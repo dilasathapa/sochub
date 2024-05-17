@@ -3,15 +3,12 @@ import NopostsComp from "./NopostsComp";
 
 const Feeds = () => {
 
-    let [count, setCount] = useState(0)
+    let [count, setCount] = useState(1)
     return (
         <>
-
             {
                 count == 0 ? (<NopostsComp />) : (<h2>data here</h2>) 
-            }
-            
-
+            }         
         </>
     )
 }

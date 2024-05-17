@@ -5,6 +5,7 @@ import Landingpage from "../Components/Landingpage";
 import LoginForm from "../Components/Auth/Login";
 import Home from "../Components/Home";
 import GSearch from "../Components/Pages/GSearch";
+import UserProfile from "../Components/Pages/UserProfile";
 
 const AllRoutes=()=>{
     return (
@@ -15,6 +16,7 @@ const AllRoutes=()=>{
             <Route path="/login" element={<LoginForm />}></Route>
             <Route path="/feed" element={<Home />}></Route>
             <Route path="/githubsearch/users" element={<GSearch />}></Route>
+            <Route path="/profile" element={<UserProfile />}></Route>
         </Routes>
         </>
     )

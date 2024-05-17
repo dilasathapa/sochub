@@ -20,7 +20,7 @@ const SearchedUserProfile = ({user}) => {
                 </div>
                 <div className={styled.links}>
                     <div>
-                        <p><BsGithub /></p>
+                        <p><a href={user.html_url} target="_blank"><BsGithub /></a></p>
                     </div>
                     <div>
                         <p><BsTwitterX /></p>

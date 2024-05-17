@@ -1,0 +1,23 @@
+.parent_container{
+    border: 2px solid red;
+    margin-top: 3%;
+    border-radius: 4px;
+    padding: 2%;
+    text-align: center;
+}
+.parent_container>p{
+    font-size: 40px;
+    font-weight: 600;
+}
+.parent_container>h4{
+    font-size: 20px;
+    color: blueviolet;
+    font-weight: 600;
+}
+.parent_container>img{
+    margin: 2% auto;
+}
+.parent_container>h3{
+    font-size: 20px;
+    font-weight: 600;
+}

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Notes from "./Pages/Notes";
 import Navbar from "../Routes/Navbar";
 import styles from "../Styles/Home.module.css"
@@ -6,17 +6,18 @@ import { FaSquarePlus } from "react-icons/fa6";
 import { FaFaceSmile } from "react-icons/fa6";
 import ProfileCard from "./Pages/ProfileCard";
 import Feeds from "./Pages/Feeds";
+import FirstTimeUserComp from "./Pages/FirstTimeUserComp";
 
 const Home = () => {
+    const [followerCount, setFollowerCount] = useState(true)
     return (
         <>
-            <Navbar />
             <div className={styles.container_parent}>
                 {/* <Notes />  */}
                 <div className={styles.container}>
                     <div className={styles.section1}>
-                        
-                        <ProfileCard />
+
+                        {/* <ProfileCard /> */}
                     </div>
                     <div className={styles.section2}>
                         <div className={styles.dailynotes}>
@@ -28,13 +29,15 @@ const Home = () => {
                             <FaSquarePlus className={styles.addBtn} />
 
                         </div>
-                        <Feeds />
+                        {
+                            followerCount ? (<Feeds />) : (<FirstTimeUserComp />)
+                        }
                     </div>
                     <div className={styles.section3}></div>
                 </div>
 
 
-            </div> 
+            </div>
         </>
     )
 }

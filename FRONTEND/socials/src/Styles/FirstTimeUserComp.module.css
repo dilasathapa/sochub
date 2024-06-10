@@ -1,9 +1,12 @@
 .parent_container{
-    border: 2px solid red;
-    margin-top: 3%;
+    /* border: 2px solid red; */
+    /* margin-top: 2%; */
     border-radius: 4px;
     padding: 2%;
     text-align: center;
+    background-color: #8165a6;
+    color: #fff;
+
 }
 .parent_container>p{
     font-size: 40px;
@@ -11,7 +14,8 @@
 }
 .parent_container>h4{
     font-size: 20px;
-    color: blueviolet;
+    /* color: blueviolet; */
+    color: #680332;
     font-weight: 600;
 }
 .parent_container>img{

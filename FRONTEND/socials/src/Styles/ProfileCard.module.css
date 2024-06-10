@@ -1,11 +1,12 @@
 .ProfileCard_parent {
-    border: 1px solid #2c3e50;
-    background-color: #2c3e50;
+    border: 1px solid #fff;
+    background-color: #8165a6;
 
     height: 300px;
     position: relative;
     margin-top: 15%;
     border-radius: 0 0 4px 4px;
+    color: #fff;
 
 }
 
@@ -27,7 +28,7 @@
 }
 
 .user_details{
-    border: 2px solid yellow;
+    /* border: 2px solid yellow; */
     margin: 65% 8% 0 8%;
 
 }

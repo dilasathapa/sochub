@@ -7,14 +7,16 @@
 .firstdiv{
     height: 50px;
     /* background-color: #2c3432; */
-    background-color: #2c3e50;
+    /* background-color: #2c3e50; */
+    background-color: #44318D;
     color: #fff;
 }
 
 .seconddiv{
     height: 50px;
     color: #fff;
-    background-color: #23063c;
+    /* background-color: #23063c; */
+    background-color: #2a1a3c;
     /* border: 2px solid green; */
     display: flex;
     justify-content: space-between;

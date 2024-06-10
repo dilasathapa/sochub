@@ -26,7 +26,7 @@
 .addpost_container{
     /* border: 2px solid teal; */
     border-radius: 4px;
-    background-color: #2c3e50;
+    background-color: #44318d;
 
 
 }
@@ -43,7 +43,8 @@
     padding-left: 10px;
     padding-top: 10px;
     border-radius: 4px;
-    background-color: #2c3432;
+    background-color: #a4b3b6;
+    color: #fff;
 }
 .icons_container{
     display: flex;
@@ -55,6 +56,8 @@
 
 .icons_container>button{
     border: 2px solid red;
+    color: #fff;
+    padding: 0 2%;
     
 }
 
@@ -63,4 +66,14 @@
     text-align: center;
     align-items: center;
     font-size: 22px;    
+    color: #fff;
+}
+
+.changed{
+    border: 2px solid red;
+    margin: 0 2%;
+}
+.changed>h2{
+    font-size: medium;
+    font-weight: 700;
 }

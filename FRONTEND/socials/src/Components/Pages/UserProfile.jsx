@@ -50,6 +50,7 @@ const UserProfile = () => {
                     <Feeds />
                 </div>
                 <div>
+                    
                     <h2>Activity log</h2>
                     <div>
                         {

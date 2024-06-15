@@ -61,12 +61,13 @@
     
 }
 
-.icons_container>p{
+.icons_container>label>p{
     /* border: 2px solid aqua; */
     text-align: center;
     align-items: center;
     font-size: 22px;    
     color: #fff;
+    cursor: pointer;
 }
 
 .changed{
@@ -76,4 +77,8 @@
 .changed>h2{
     font-size: medium;
     font-weight: 700;
+}
+
+input[type="file"]{
+    display: none;
 }

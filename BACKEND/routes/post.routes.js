@@ -1,12 +1,12 @@
 const express = require('express')
 const postRouter = express.Router()
+const Post = require("./../models/Post.model")
+const verifyToken = require("../middleware/auth")
 
-// postRouter.post('/addposts', verifyToken, async (req, res) => {
-postRouter.post('/addposts', async (req, res) => {
+postRouter.post('/addposts', verifyToken, async (req, res) => {
 
     try {
         let { content, postimage } = req.body;
-        console.log("userid", req.user)
 
         const author = req.user.user_id
         const post = await Post.create({
@@ -17,7 +17,7 @@ postRouter.post('/addposts', async (req, res) => {
         res.status(201).json(post);
 
     } catch (err) {
-        console.error(err);
+        console.log("err", err);
 
         return res.status(500).send({
             error: 'Something went wrong'

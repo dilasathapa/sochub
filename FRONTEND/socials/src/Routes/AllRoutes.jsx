@@ -18,6 +18,7 @@ const AllRoutes=()=>{
             <Route path="/githubsearch/users" element={<GSearch />}></Route>
             <Route path="/profile" element={<UserProfile />}></Route>
         </Routes>
+        {/* <LoginForm /> */}
         </>
     )
 }

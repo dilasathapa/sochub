@@ -5,6 +5,7 @@ import Feeds from "./Feeds";
 import { BsImages } from "react-icons/bs";
 import { BsCameraVideoFill } from "react-icons/bs";
 import { BsEmojiSmileFill } from "react-icons/bs";
+import {useDispatch} from "react-redux"
 
 const UserProfile = () => {
 
@@ -12,12 +13,13 @@ const UserProfile = () => {
     const [isRemove, setIsRemove] = useState(true)
     const [media, setMedia] = useState(null)
     const [fileData, setFileData] = useState(null)
+    const dispatch = useDispatch();
 
     const handleDescription =(e)=>{
         setDescription(e.target.value)
     }
     const sendData = ()=>{
-        console.log("hello")
+        dispatch()
     }
 
     const addMedia = (e)=>{ //fn to add media
@@ -50,7 +52,7 @@ const UserProfile = () => {
                                 onChange={handleDescription}
                             ></textarea>
                             <div className={styles.icons_container}>
-                                <button onClick={handlePreview} type="submit" id="preview-btn">preview</button>
+                                <button onClick={handlePreview} type="submit" className={styles.preview_btn}>preview</button>
                                 <label htmlFor="img">
                                 <p>
                                     <BsImages />
@@ -59,7 +61,6 @@ const UserProfile = () => {
                                 <input name="video" id="video" 
                                 type="file"
                                 accept="video/mp4,video/x-m4v,video/*"
-                                onChange={addMedia}
                                 />
                                 <label htmlFor="video">
                                 <p>
@@ -69,6 +70,8 @@ const UserProfile = () => {
                                 <input name="img" id="img"
                                 type="file" 
                                 accept="image/*"
+                                multiple
+                                onChange={addMedia}
                                 />
                                 <p>
                                     <BsEmojiSmileFill />
@@ -89,13 +92,7 @@ const UserProfile = () => {
                                     <p id="preview-post-p">{description}</p>
 
                                     <div id="preview-post">
-
-                                        {/* <img src={fileData} alt="filepic" /> */}
-                                        <video >
-                                            <source src={fileData}/>
-                                        </video>
-
-
+                                        <img src={fileData} alt="filepic" />
                                     </div>
                                     <button id="sendpost-btn"
                                         onClick={sendData}

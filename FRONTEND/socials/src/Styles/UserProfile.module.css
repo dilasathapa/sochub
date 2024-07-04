@@ -19,7 +19,7 @@
 }
 .parent_container>div:nth-child(3){
     width: 30%;
-    border: 2px solid orange;
+    /* border: 2px solid orange; */
     
 }
 
@@ -54,11 +54,13 @@
     padding: 1% 5%;
 }
 
-.icons_container>button{
-    border: 2px solid red;
-    color: #fff;
+.preview_btn{
+    border: 1px solid #fff;
+    font-size: 14px;
+    margin-bottom: 1%;
     padding: 0 2%;
-    
+    color: #fff;
+    border-radius: 10px;
 }
 
 .icons_container>label>p{
@@ -69,10 +71,14 @@
     color: #fff;
     cursor: pointer;
 }
+.icons_container>p{
+    color: #fff;
+    font-size: 20px;    
+}
 
 .changed{
     border: 2px solid red;
-    margin: 0 2%;
+    /* margin: 0 2px; */
 }
 .changed>h2{
     font-size: medium;

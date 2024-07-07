@@ -1,11 +1,13 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "../../Styles/UserProfile.module.css"
 import ProfileCard from "./ProfileCard";
 import Feeds from "./Feeds";
 import { BsImages } from "react-icons/bs";
 import { BsCameraVideoFill } from "react-icons/bs";
 import { BsEmojiSmileFill } from "react-icons/bs";
-import {useDispatch} from "react-redux"
+import {useDispatch, useSelector} from "react-redux"
+import { addPostDescription } from "../../Redux/Actions/postAction";
+import Photospage from "./Photospage";
 
 const UserProfile = () => {
 
@@ -14,12 +16,19 @@ const UserProfile = () => {
     const [media, setMedia] = useState(null)
     const [fileData, setFileData] = useState(null)
     const dispatch = useDispatch();
+    // useEffect(()=>{
+        const posts = useSelector(state => state.description);
+
+        console.log("pp", posts)
+
+    // },[description])
 
     const handleDescription =(e)=>{
         setDescription(e.target.value)
     }
     const sendData = ()=>{
-        dispatch()
+        dispatch(addPostDescription({ description, fileData }))
+        setDescription("")
     }
 
     const addMedia = (e)=>{ //fn to add media
@@ -34,7 +43,7 @@ const UserProfile = () => {
         };
         reader.readAsDataURL(media);
     }
-    console.log("filedata", fileData)
+    // console.log("filedata", fileData)
 
     return (
         <>
@@ -83,7 +92,7 @@ const UserProfile = () => {
                 </div>
                 <div>
                     
-                    <h2>Activity log</h2>
+                    {/* <h2>Activity log</h2> */}
                     <div>
                         {
                             (isRemove && description!="" || fileData!=null) ? (
@@ -98,7 +107,11 @@ const UserProfile = () => {
                                         onClick={sendData}
                                     >Post</button>
                                 </div>
-                            ) :("kbhk")
+                            ) :(
+                                <div>
+                                    <Photospage />
+                                </div>
+                            )
                         }
                     </div>
                 </div>
